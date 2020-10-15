@@ -1,0 +1,249 @@
+/* Reset CSS */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* fin du reset */
+body {
+    background-color: #EFEFEF;
+    margin: 0em;
+    padding: 0;
+    background: #EFEFEF;
+    color: #000000;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+/* Parametrage du header + bouton de navigation */
+header
+{
+    display: flex;
+    align-items: center;
+    
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    color: #fff;
+    background-color:#631120 ;
+}
+header h1{
+    display: block;
+    position: absolute;
+    font-size:2em;
+    width: 60%;
+    text-align: center;
+    padding-left: 0.1em;
+    padding-right: 1em;
+}
+
+/* Menu déroulant */
+.menucheck
+{
+ position: absolute;
+right: 1.5em;
+top: 1.5em;
+z-index: 20;
+opacity: 0;
+
+}
+
+.menucheck:checked  ~ .menu-principal
+{
+    transform: translateX(0%);
+    transition-duration: 0.5s;
+}
+
+
+.bouton-nav
+{ 
+    display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+    position: absolute;
+background-color: none ;
+right: 3.5rem;
+top: 3.5rem;
+z-index: 20;
+cursor: pointer;
+}
+.barre
+{
+    display: block;
+   margin-top: auto;
+  margin-bottom: auto;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.barre:last-child
+{
+    margin-bottom: 3px;
+}
+.bouton-nav .barre
+{
+    width:3em;
+    height: 6px;
+    background: #fff;
+    margin-top: 3px;
+   
+}
+
+.menu-principal
+{
+    position: fixed;
+    right:0 ;
+    padding: 0 1em;
+    padding-right: 1em;
+    background: rgb(0, 0, 0);
+    width: 9em;
+    height: 100%;
+    transform: translateX(100%);
+    
+}
+.menu-principal ul
+{
+    color: white;
+    right:1em;
+    left:1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    list-style-type: none;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+.menu-principal ul li
+{
+    color:  #631120;
+    margin: 1em 0;
+    font-size: 1em;
+    font-weight: 800;
+text-align: center;
+}
+.lititre
+{
+    font-weight: 800;
+    text-indent: 1em;
+}
+.menu-principal ul li a
+{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 100;
+    text-indent:none;
+    letter-spacing: 0.050em;
+
+}
+.menu-principal ul li a:hover
+{
+    color: #631120;
+}
+/* fin config menu principal + Navigation*/
+
+/* Titre de la page*/
+h2
+{
+    font-size: 4em;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #631120;
+    color: #fff;
+    margin: 2%;
+    text-align: center;
+}
+/* Fin titre */
+/* Section Nom Prenom + info perso*/
+.presentation
+{
+    display: flex;
+    position: absolute;
+    background-image:url(bandeau-cadre/cadrepresentation.png);
+    background-repeat:no-repeat;
+    width:95%;
+    left: 2%;
+    right: 2%;
+}
+
+.nomprenom
+{
+    display: block;
+}
+ .nomprenom img
+ {
+     width: 100%;
+     height: 100%;
+ }
+
+
+.sm-col-1 { width: 8.33%; }
+.sm-col-2 { width: 16.66%; }
+.sm-col-3 { width: 25%;}
+.sm-col-4 { width: 33.33%;}
+.sm-col-5 { width: 41.66%;}
+.sm-col-6 { width: 50%;}
+.sm-col-7 { width: 58.33%;}
+.sm-col-8 { width: 66.66%;}
+.sm-col-9 { width: 75%;}
+.sm-col-10 { width: 83.33%;}
+.sm-col-11 { width: 91.66%;}
+.sm-col-12 { width: 100%; }
+
+@media screen and (min-width:720px) {
+
+    body {
+        background-color: rgb(55, 137, 165);
+        color: #EFEFEF;
+    }
+    header h1
+    {
+        padding-left: 10%;
+        font-size:3em;
+    }
+    .md-col-1 { width: 8.33%; }
+    .md-col-2 { width: 16.66%; }
+    .md-col-3 { width: 25%;}
+    .md-col-4 { width: 33.33%;}
+    .md-col-5 { width: 41.66%;}
+    .md-col-6 { width: 50%;}
+    .md-col-7 { width: 58.33%;}
+    .md-col-8 { width: 66.66%;}
+    .md-col-9 { width: 75%;}
+    .md-col-10 { width: 83.33%;}
+    .md-col-11 { width: 91.66%;}
+    .md-col-12 { width: 100%; }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    body {
+        background-color: rgb(2, 67, 88);
+        color: lightblue;
+    }
+    header h1
+    {
+        font-size:4em;
+        text-align: center;
+    }
+    .lg-col-1 { width: 8.33%; }
+    .lg-col-2 { width: 16.66%; }
+    .lg-col-3 { width: 25%;}
+    .lg-col-4 { width: 33.33%;}
+    .lg-col-5 { width: 41.66%;}
+    .lg-col-6 { width: 50%;}
+    .lg-col-7 { width: 58.33%;}
+    .lg-col-8 { width: 66.66%;}
+    .lg-col-9 { width: 75%;}
+    .lg-col-10 { width: 83.33%;}
+    .lg-col-11 { width: 91.66%;}
+    .lg-col-12 { width: 100%; }
+}
