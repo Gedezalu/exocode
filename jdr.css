@@ -77,6 +77,7 @@ body {
 {
    object-fit: contain;
    margin: 1%;
+   width:100%;
 }
 /* Menu déroulant */
 .menucheck
@@ -258,6 +259,10 @@ section ul li
     margin-top: 3em;
     margin-bottom: 3em;
     width:10%;
+}
+.finparaph img
+{
+    width:100%;
 }
 footer
 {
