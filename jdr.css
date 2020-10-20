@@ -34,7 +34,7 @@ body {
 .flexb
 {display: flex;}
 .gras
-{ font-weight: bold;}
+{font-weight: bold;}
 .ita
 {font-style: italic;}
 .red
@@ -219,8 +219,9 @@ section
 section p
 {
     margin: 1em;
-    text-align:justify;
+    text-align:left;
     text-indent:1em;
+
 }
 section h3
 {
@@ -243,7 +244,7 @@ section ul
 {
     list-style-type:circle;
     width: 80%;
-    text-align: justify;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
